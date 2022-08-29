@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fondo {
+    background-image: url(../img/fondoweb.webp);
+    color: antiquewhite;
+}
+
+header {
+    border-bottom: solid 2px aquamarine;
+    border-top: solid 2px aquamarine;
+}
+
+h1 {
+    letter-spacing: 5px;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+h2 {
+    letter-spacing: 1px;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.menu a {
+    font-size: 1.3rem;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.menu li :hover {
+    font-size: 1.3rem;
+    background-color: aquamarine;
+    color: black;
+}
+
+.contenido {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contenido p {
+    padding: 10px;
+}
+
+.lista ul {
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+.lista li {
+    list-style-type: none;
+}
+
+footer {
+    border-bottom: solid 2px aquamarine;
+    border-top: solid 2px aquamarine;
+    text-align: center;
+    font-size: 1.3rem;
+    color: aquamarine;
+    font-weight: bolder;
+}
+
+.pulso {
+    animation: opacityPulse 1s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 1;
+}
+
+@-webkit-keyframes opacityPulse {
+    0% {opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.0;}
+}
+
+.tutos {
+    text-align: center;
+    justify-content: center;
+}
+
+.tutos div {
+    border: dashed 1px aquamarine;
+}
+
+.tareas{  /*Inicio estilos tareas*/
+    grid-area: contenido2;
+    grid-column: span 3;
+    width: 100%;
+    text-align: center;
+}
+
+.tareas table{
+    margin: auto;
+    color: white;
+    font-size: 20px;
+}
+
+.tareas a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.tareas a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+.tareas{
+    text-align: center;
+}
+
+.tareasLista{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px aquamarine;
+    font-size: 25px;
+    line-height: 40px;
+} /*Fin estilos tareas*/
+
+.formu{ /*Inicio estilos formu*/
+    grid-area: contenido2;
+    text-align: center;
+}
+
+.contacto{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px aquamarine;
+    font-size: 20px;
+} /*Fin estilos formu*/
+
+.icono {
+    font-size: 40px;
+}
+
+.rota {
+    animation: rotating 10s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 479px) {
+    h1 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+    .contenido {
+        font-size: 7px;
+    }
+}
